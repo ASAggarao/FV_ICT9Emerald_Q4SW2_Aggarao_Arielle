@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title>Q4 Seatwork 2</title>
+	<style>
+		#box{
+			display: flex;
+			width: 600px;
+			height: 400px;
+			padding: 40px;
+			border: 10px #99c1b9;
+			border-style: double;
+            margin-left: 10px;
+            margin-bottom: 200px;
+            font-family: Century Gothic;
+            font-weight: bold;
+            background-color: whitesmoke;
+		}
+
+		#label{
+			margin-top: 40px;
+			width: 500px;
+		}
+
+		#container {
+    		height: 100vh;
+    		width: 100%;
+		}
+
+		#title{
+			font-size: 30px;
+			font-family: Century Gothic;
+			font-weight: bold;
+			color: #d88c9a;
+		}
+
+		#subtitle{
+			font-size: 25px;
+			font-family: Century Gothic;
+			color: #a3896c;
+		}
+
+		img{
+			height: 110px;
+			width: 120px;
+		}
+
+			
+	</style>
+</head>
+<body id="container" style="background-color:#f1e3d3;">
+<center>
+	<br><br>
+	<p id="title">🖩 ONLINE CALCULATOR 🖩</p>
+	<h2 id="subtitle">Welcome! Enter the following and you will recieve your answer.</h2>
+	<img src="https://pngimg.com/d/calculator_PNG102230.png">
+
+	<br><br>
+
+	<div class="col-md-6" id="box">
+		<form class="form-group">
+			<label id="label">Enter a value for X:</label>
+				<input type="number" class="form-control" bg-primary id="num1">
+			<label>Enter a value for Y:</label>
+				<input type="number" class="form-control" bg-primary id="num2">
+	<br>
+				<button class="btn btn-primary" id="enterbtn" onclick="Add()"> Add </button>
+				<button class="btn btn-success" id="enterbtn" onclick="Multiply()"> Multiply </button>
+				<button class="btn btn-danger" id="enterbtn" onclick="Exponation()"> X raised to Y </button>
+				<button class="btn btn-warning" id="enterbtn" onclick="Modulus()"> Get the remainder </button>
+		</form>
+	</div>
+
+<script>
+	function Add(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var sum = Number(num1) + Number(num2);
+
+		window.alert('The sum of X and Y is: ' + sum);
+	}	
+
+	function Multiply(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var product = Number(num1) * Number(num2);
+
+		window.alert('The product of X and Y is: ' + product);
+	}	
+
+	function Exponation(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var exponation = Number(num1) ** Number(num2);
+
+		window.alert('X raised to Y is: ' + epona);
+	}
+
+	function Modulus(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var sum = Number(num1) % Number(num2);
+
+		window.alert('The remainder of X and Y is: ' + sum);
+	}	
+</script>
+</body>
+</html>
